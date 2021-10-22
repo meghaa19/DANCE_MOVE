@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	int i,p,q,n,arr[100];
+	int i,p,q,n,arr[1000];
 	cin>>n;
 	for(i=0;i<n;i++)
 	{
@@ -18,11 +18,24 @@ int main()
 		{
 			arr[i]=p-q;
 		}
+		else
+		{
+			if((q-p)%2==0)
+			{
+				arr[i]=(q-p)/2;
+			}
+			else
+			{
+				arr[i]=((q-p)/2)+2;
+			}
+		}
+
 	}
 	for(i=0;i<n;i++)
 	{
 		cout<<arr[i]<<endl;
 	}
+	
 	return 0;
 	
 }
