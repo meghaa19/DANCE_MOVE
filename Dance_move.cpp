@@ -19,7 +19,7 @@ int main()
 			arr[i]=p-q;
 		}
 	}
-	 for(i=0;i<n;i++)
+	for(i=0;i<n;i++)
 	{
 		cout<<arr[i]<<endl;
 	}
